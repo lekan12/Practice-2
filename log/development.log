@@ -5,3 +5,317 @@ Cannot render console from 92.237.108.173! Allowed networks: 127.0.0.1, ::1, 127
 Processing by Rails::WelcomeController#index as HTML
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (1.6ms)
 Completed 200 OK in 19ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (10.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (7.5ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateReviews (20170129222942)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "reviews" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "headline" text, "summary" text, "link" text, "writer" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170129222942"]]
+  [1m[35m (10.5ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 92.237.108.173 at 2017-01-29 22:33:02 +0000
+Cannot render console from 92.237.108.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 92.237.108.173 at 2017-01-29 23:18:36 +0000
+Cannot render console from 92.237.108.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ReviewsController#index as HTML
+  Rendered reviews/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 743ms (Views: 741.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reviews.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 92.237.108.173 at 2017-01-29 23:18:38 +0000
+Cannot render console from 92.237.108.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 92.237.108.173 at 2017-01-29 23:18:38 +0000
+Cannot render console from 92.237.108.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/reviews.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 92.237.108.173 at 2017-01-29 23:18:38 +0000
+Cannot render console from 92.237.108.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 92.237.108.173 at 2017-01-29 23:18:38 +0000
+Cannot render console from 92.237.108.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 92.237.108.173 at 2017-01-29 23:33:23 +0000
+Cannot render console from 92.237.108.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ReviewsController#index as HTML
+  Rendered reviews/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 4255ms (Views: 4246.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-3d2b1085db6945c1ed2965f6b9561bfd4c3d4bfd17596a955c1ce8b4068f6b3f.css?body=1" for 92.237.108.173 at 2017-01-29 23:33:28 +0000
+Cannot render console from 92.237.108.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/transition.self-6ad2488465135ab731a045a8ebbe3ea2fc501aed286042496eda1664fdd07ba9.js?body=1" for 92.237.108.173 at 2017-01-29 23:33:28 +0000
+Cannot render console from 92.237.108.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/button.self-126ac9bf0e7f2d8568f8da3a00fd5f0fac6eae0946331003370161fbf8d7975e.js?body=1" for 92.237.108.173 at 2017-01-29 23:33:28 +0000
+Cannot render console from 92.237.108.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/modal.self-3e78617ade5663314b7ee0ea10375a5b34d59ffbade44939e3f2a4e4ef2019b3.js?body=1" for 92.237.108.173 at 2017-01-29 23:33:28 +0000
+Cannot render console from 92.237.108.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/affix.self-6d6f1a7fc5c8aabf3547fa1b794fab6268f54bc55ad815e55873c71f52513517.js?body=1" for 92.237.108.173 at 2017-01-29 23:33:28 +0000
+Cannot render console from 92.237.108.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/alert.self-742145c5bb847aafdadc6e339be795628f8bc25f177e851f03a8c42278eb0312.js?body=1" for 92.237.108.173 at 2017-01-29 23:33:28 +0000
+Cannot render console from 92.237.108.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/carousel.self-e47323f363ceb3dc0bdbce05e36e709ed428e339833a41140a85cb0af24b8127.js?body=1" for 92.237.108.173 at 2017-01-29 23:33:28 +0000
+Cannot render console from 92.237.108.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/scrollspy.self-969f3c5f48cdf1e439c7fa1154c13b948715f5c689f87837c0b64521d3b46ef6.js?body=1" for 92.237.108.173 at 2017-01-29 23:33:28 +0000
+Cannot render console from 92.237.108.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tooltip.self-05afb177e08f98997ccfc84fa08a215e4b27d48d5fe4d049080675e9dffd8199.js?body=1" for 92.237.108.173 at 2017-01-29 23:33:28 +0000
+Cannot render console from 92.237.108.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/collapse.self-2eb697f62b587bb786ff940d82dd4be88cdeeaf13ca128e3da3850c5fcaec301.js?body=1" for 92.237.108.173 at 2017-01-29 23:33:28 +0000
+Cannot render console from 92.237.108.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/popover.self-0aa93860b59fe7393f1dd490f54b3cb994f9d6155adffce034d4e14ae361b041.js?body=1" for 92.237.108.173 at 2017-01-29 23:33:28 +0000
+Cannot render console from 92.237.108.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/dropdown.self-561cca1cbaf67474e01e9536f106bad541594860a6df997004591c1c1957a147.js?body=1" for 92.237.108.173 at 2017-01-29 23:33:28 +0000
+Cannot render console from 92.237.108.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tab.self-5bf7078b682f8b131332eefa46b45fa5eff2eca745fc0d03e2991450888f7c28.js?body=1" for 92.237.108.173 at 2017-01-29 23:33:29 +0000
+Cannot render console from 92.237.108.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/reviews/new" for 92.237.108.173 at 2017-01-29 23:42:41 +0000
+Cannot render console from 92.237.108.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ReviewsController#new as HTML
+  Rendered reviews/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 64ms (Views: 56.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/reviews/new" for 92.237.108.173 at 2017-01-29 23:47:59 +0000
+Cannot render console from 92.237.108.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ReviewsController#new as HTML
+  Rendered reviews/_form.html.erb (187.7ms)
+  Rendered reviews/new.html.erb within layouts/application (191.0ms)
+Completed 500 Internal Server Error in 193ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `map' for nil:NilClass
+Did you mean?  tap):
+    1: <%= simple_form_for @review do |f| %>
+    2: 	<%= select_tag(:category_id, options_for_select(@categories), :prompt => "Select a category") %>
+    3: 	<%= f.file_field :book_img %>
+    4: 	<%= f.input :headline, label: "Review Headline" %>
+    5: 	<%= f.input :summary %>
+  app/views/reviews/_form.html.erb:2:in `block in _app_views_reviews__form_html_erb___1099787311186375116_70352457667640'
+  app/views/reviews/_form.html.erb:1:in `_app_views_reviews__form_html_erb___1099787311186375116_70352457667640'
+  app/views/reviews/new.html.erb:3:in `_app_views_reviews_new_html_erb___3997870722101892014_70352457867760'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (36.9ms)
+
+
+Started GET "/reviews/new" for 92.237.108.173 at 2017-01-29 23:48:19 +0000
+Cannot render console from 92.237.108.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ReviewsController#new as HTML
+  Rendered reviews/_form.html.erb (33.2ms)
+  Rendered reviews/new.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 107ms (Views: 106.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reviews/new" for 92.237.108.173 at 2017-01-29 23:49:21 +0000
+Cannot render console from 92.237.108.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ReviewsController#new as HTML
+  Rendered reviews/_form.html.erb (7.7ms)
+  Rendered reviews/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 70ms (Views: 69.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/reviews" for 92.237.108.173 at 2017-01-29 23:54:48 +0000
+Cannot render console from 92.237.108.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bsfytL4XkishB1dgo05oHyZnPSxF8/hsIctmfDbPPmHWLB1YxUzRXY7r1l2D6PVkP0arp02NtNpchQELZZsw8w==", "review"=>{"headline"=>"Life of Black Tiger Review – The Worst PS4 Game In The World", "summary"=>"Whatever possessed Sony to start selling and actively promoting slapdash Android ports and Steam Greenlight rejects remains a mystery, but it would appear the PlayStation Store’s floodgates are beginning to swing wide open. Even stranger, Sony itself appears to be promoting some severely overpriced and undercooked software.", "link"=>"http://www.thejimquisition.com/life-of-black-tiger-review/", "writer"=>"Jim Sterling"}, "commit"=>"Create Review"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `requir' for #<ActionController::Parameters:0x007ff86b0dd570>
+Did you mean?  require
+               required):
+  app/controllers/reviews_controller.rb:23:in `review_params'
+  app/controllers/reviews_controller.rb:11:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.6ms)
+
+
+Started POST "/reviews" for 92.237.108.173 at 2017-01-29 23:55:26 +0000
+Cannot render console from 92.237.108.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bsfytL4XkishB1dgo05oHyZnPSxF8/hsIctmfDbPPmHWLB1YxUzRXY7r1l2D6PVkP0arp02NtNpchQELZZsw8w==", "review"=>{"headline"=>"Life of Black Tiger Review – The Worst PS4 Game In The World", "summary"=>"Whatever possessed Sony to start selling and actively promoting slapdash Android ports and Steam Greenlight rejects remains a mystery, but it would appear the PlayStation Store’s floodgates are beginning to swing wide open. Even stranger, Sony itself appears to be promoting some severely overpriced and undercooked software.", "link"=>"http://www.thejimquisition.com/life-of-black-tiger-review/", "writer"=>"Jim Sterling"}, "commit"=>"Create Review"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "reviews" ("headline", "summary", "link", "writer", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["headline", "Life of Black Tiger Review – The Worst PS4 Game In The World"], ["summary", "Whatever possessed Sony to start selling and actively promoting slapdash Android ports and Steam Greenlight rejects remains a mystery, but it would appear the PlayStation Store’s floodgates are beginning to swing wide open. Even stranger, Sony itself appears to be promoting some severely overpriced and undercooked software."], ["link", "http://www.thejimquisition.com/life-of-black-tiger-review/"], ["writer", "Jim Sterling"], ["created_at", "2017-01-29 23:55:26.892597"], ["updated_at", "2017-01-29 23:55:26.892597"]]
+  [1m[35m (8.9ms)[0m  commit transaction
+Redirected to https://gubgook-lekan12.c9users.io/
+Completed 302 Found in 21ms (ActiveRecord: 10.0ms)
+
+
+Started GET "/" for 92.237.108.173 at 2017-01-29 23:55:27 +0000
+Cannot render console from 92.237.108.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ReviewsController#index as HTML
+  Rendered reviews/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 39ms (Views: 38.8ms | ActiveRecord: 0.0ms)
+  [1m[36mReview Load (0.2ms)[0m  [1mSELECT  "reviews".* FROM "reviews"  ORDER BY "reviews"."id" ASC LIMIT 1[0m
+
+
+Started GET "/" for 92.237.108.173 at 2017-01-30 00:01:58 +0000
+Cannot render console from 92.237.108.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ReviewsController#index as HTML
+  [1m[36mReview Load (0.3ms)[0m  [1mSELECT "reviews".* FROM "reviews"  ORDER BY created_at DESC[0m
+  Rendered reviews/index.html.erb within layouts/application (9.8ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (undefined method `title' for #<Review:0x007ff869d3b378>):
+    1: <% @reviews.each do |review| %>
+    2:   <h2><%= review.title %></h2>
+    3: <% end %>
+  app/views/reviews/index.html.erb:2:in `block in _app_views_reviews_index_html_erb__27763461888985384_70352452556920'
+  app/views/reviews/index.html.erb:1:in `_app_views_reviews_index_html_erb__27763461888985384_70352452556920'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (27.3ms)
+
+
+Started GET "/" for 92.237.108.173 at 2017-01-30 00:05:15 +0000
+Cannot render console from 92.237.108.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ReviewsController#index as HTML
+  [1m[35mReview Load (0.2ms)[0m  SELECT "reviews".* FROM "reviews"  ORDER BY created_at DESC
+  Rendered reviews/index.html.erb within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `title' for #<Review:0x007ff86be00928>):
+    1: <% @reviews.each do |review| %>
+    2: 
+    3:   <h2><%= review.title %></h2>
+    4:   
+    5: <% end %>
+  app/views/reviews/index.html.erb:3:in `block in _app_views_reviews_index_html_erb__27763461888985384_70352469249720'
+  app/views/reviews/index.html.erb:1:in `_app_views_reviews_index_html_erb__27763461888985384_70352469249720'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (29.2ms)
+
+
+Started GET "/" for 92.237.108.173 at 2017-01-30 00:05:53 +0000
+Cannot render console from 92.237.108.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ReviewsController#index as HTML
+  [1m[36mReview Load (0.3ms)[0m  [1mSELECT "reviews".* FROM "reviews"  ORDER BY created_at DESC[0m
+  Rendered reviews/index.html.erb within layouts/application (10.3ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.7ms)
+
+ActionView::Template::Error (undefined method `title' for #<Review:0x007ff86b05da78>):
+    1: <% @reviews.each do |review| %>
+    2: 
+    3:   <h2><%= review.title %></h2>
+    4:   
+    5: <% end %>
+  app/views/reviews/index.html.erb:3:in `block in _app_views_reviews_index_html_erb__27763461888985384_70352463667880'
+  app/views/reviews/index.html.erb:1:in `_app_views_reviews_index_html_erb__27763461888985384_70352463667880'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (31.3ms)
+
+
+Started GET "/" for 92.237.108.173 at 2017-01-30 00:07:02 +0000
+Cannot render console from 92.237.108.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ReviewsController#index as HTML
+  [1m[35mReview Load (0.2ms)[0m  SELECT "reviews".* FROM "reviews"  ORDER BY created_at DESC
+  Rendered reviews/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 107ms (Views: 106.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/reviews/new" for 92.237.108.173 at 2017-01-30 00:07:27 +0000
+Cannot render console from 92.237.108.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ReviewsController#new as HTML
+  Rendered reviews/_form.html.erb (9.4ms)
+  Rendered reviews/new.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 87ms (Views: 85.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/reviews" for 92.237.108.173 at 2017-01-30 00:09:12 +0000
+Cannot render console from 92.237.108.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LkbnCLAm7URNbCDb+TE7VvItBOwYh+stp/V3H/+kI+iWrQjky32uMuKAoebZl6Yt6wySZxD5p5vauxBorPAteg==", "review"=>{"headline"=>"Mass Effect: Andromeda: 12 Things You Missed in the New Trailers", "summary"=>"The latest batch of Mass Effect: Andromeda trailers revealed a lot of new details concerning the game's story, characters, and setting. While you were busy staring in awe at what you can expect from the game, there was an abundance of details you might've missed in the trailers. Click ahead to check out all of the important details we spotted from both the new Mass Effect: Andromeda trailers.", "link"=>"http://www.gamespot.com/gallery/mass-effect-andromeda-12-things-you-missed-in-the-/2900-1083/", "writer"=>"Matt Espineli"}, "commit"=>"Create Review"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "reviews" ("headline", "summary", "link", "writer", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["headline", "Mass Effect: Andromeda: 12 Things You Missed in the New Trailers"], ["summary", "The latest batch of Mass Effect: Andromeda trailers revealed a lot of new details concerning the game's story, characters, and setting. While you were busy staring in awe at what you can expect from the game, there was an abundance of details you might've missed in the trailers. Click ahead to check out all of the important details we spotted from both the new Mass Effect: Andromeda trailers."], ["link", "http://www.gamespot.com/gallery/mass-effect-andromeda-12-things-you-missed-in-the-/2900-1083/"], ["writer", "Matt Espineli"], ["created_at", "2017-01-30 00:09:12.417078"], ["updated_at", "2017-01-30 00:09:12.417078"]]
+  [1m[36m (9.8ms)[0m  [1mcommit transaction[0m
+Redirected to https://gubgook-lekan12.c9users.io/
+Completed 302 Found in 13ms (ActiveRecord: 10.1ms)
+
+
+Started GET "/" for 92.237.108.173 at 2017-01-30 00:09:12 +0000
+Cannot render console from 92.237.108.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ReviewsController#index as HTML
+  [1m[35mReview Load (0.2ms)[0m  SELECT "reviews".* FROM "reviews"  ORDER BY created_at DESC
+  Rendered reviews/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 38ms (Views: 37.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 92.237.108.173 at 2017-01-30 00:11:51 +0000
+Cannot render console from 92.237.108.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ReviewsController#index as HTML
+  [1m[36mReview Load (0.4ms)[0m  [1mSELECT "reviews".* FROM "reviews"  ORDER BY created_at DESC[0m
+  Rendered reviews/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 54ms (Views: 52.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/reviews/new" for 92.237.108.173 at 2017-01-30 00:11:56 +0000
+Cannot render console from 92.237.108.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ReviewsController#new as HTML
+  Rendered reviews/_form.html.erb (9.3ms)
+  Rendered reviews/new.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 51ms (Views: 50.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reviews/new" for 92.237.108.173 at 2017-01-30 00:13:42 +0000
+Cannot render console from 92.237.108.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by ReviewsController#new as HTML
+  Rendered reviews/_form.html.erb (8.5ms)
+  Rendered reviews/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 61ms (Views: 54.9ms | ActiveRecord: 0.4ms)

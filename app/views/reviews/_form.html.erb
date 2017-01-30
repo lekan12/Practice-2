@@ -1,0 +1,8 @@
+<%= simple_form_for @review do |f| %>
+	<%= f.file_field :book_img %>
+	<%= f.input :headline %>
+	<%= f.input :summary %>
+	<%= f.input :link, label: "URL" %>
+	<%= f.input :writer %>
+	<%= f.button :submit, :class => 'btn-custom2' %>
+<% end %>
