@@ -1,0 +1,18 @@
+<h1><%= @review.headline %></h1>
+<h4>Category: <%= @review.category.name %></h4>
+<p><%= @review.summary %></p>
+<h4><%= @review.link %></h4>
+<h3><%= @review.writer %></h3>
+
+<%= link_to "Back", root_path %>
+
+<% if user_signed_in? %>
+
+<% if @review.user_id == current_user.id %>
+
+<%= link_to "Edit", edit_review_path(@review) %>
+<%= link_to "Delete", review_path(@review), method: :delete, data: { confirm: "Are you sure?" } %>
+
+<% end %>
+
+<% end %>

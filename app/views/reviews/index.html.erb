@@ -1,7 +1,13 @@
+<h1 class="current-category"><%= params[:category] %></h1>
+
+<% if @reviews.count == 0 %>
+<h1>There are no news articles currently in this category</h1>
+
+<% else %>	
+
 <% @reviews.each do |review| %>
 
-  <h2><%= review.headline %></h2>
+  <h2><%= link_to review.headline, review_path(review) %></h2>
   
 <% end %>
-
-<%= link_to "New Review", new_review_path %>
+<% end %>
